@@ -1,0 +1,6 @@
+{
+    "repos": "http://slidesjs.com/",
+    "version": "v1.0.0",
+    "name": "slides",
+    "main": "slides.js"
+}
