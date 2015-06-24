@@ -9,7 +9,7 @@ jQuery幻灯片插件
 > 
 > 用Slides插件，你可以随机播放幻灯片，设定那一套您想要开始幻灯片。
 > 
-> 本插件是通过http://slidesjs.com/改造而成的。
+> 本插件是通过改造而成的 http://slidesjs.com/
 
 
 ----------
