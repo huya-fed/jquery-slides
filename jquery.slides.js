@@ -161,7 +161,7 @@
             });
 
             pagination.on('click','.slidesjs-pagination-item',function(e){
-            	e.preventDefault();
+                e.preventDefault();
                 _this.stop(true);
                 return _this.goto(($(e.currentTarget).attr("data-slidesjs-item") * 1) + 1);
             }) 
@@ -387,11 +387,14 @@
                     slidesControl.css({
                         left: 0
                     });
-                    slidesControl.children(":eq(" + currentSlide + ")").css({
-                      display: "none",
-                      left: 0,
-                      zIndex: 0
+                    slidesControl.children(":eq(" + next + ")").css({
+                        left: 0
                     });
+                    slidesControl.children(":eq(" + currentSlide + ")").css({
+                        display: "none",
+                        left: 0,
+                        zIndex: 0
+                    })
                     $.data(_this, "current", next);
                     $.data(_this, "animating", false);
                     _this.options.callback.complete(next + 1);

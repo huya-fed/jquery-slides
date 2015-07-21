@@ -106,8 +106,6 @@ jQuery幻灯片插件
 	        // [number] Time spent on each slide in milliseconds.
 	      auto: false,
 	        // [boolean] Start playing the slideshow on load.
-	      swap: true,
-	        // [boolean] show/hide stop and play buttons
 	      pauseOnHover: false,
 	        // [boolean] pause a playing slideshow on hover
 	      restartDelay: 2500
