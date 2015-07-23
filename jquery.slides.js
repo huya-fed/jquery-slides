@@ -107,18 +107,19 @@
               href: "javascript:void(0);",
               text: "下一页"
             }).appendTo($element);  
+
+            prevButton.click(function(e) {
+                e.preventDefault();
+                _this.stop(true);
+                _this.next(_this.options.navigation.effect);
+            });
+            nextButton.click(function(e) {
+                e.preventDefault();
+                _this.stop(true);
+                _this.previous(_this.options.navigation.effect);
+            });
         }
 
-        $(".slidesjs-next", $element).click(function(e) {
-            e.preventDefault();
-            _this.stop(true);
-            _this.next(_this.options.navigation.effect);
-        });
-        $(".slidesjs-previous", $element).click(function(e) {
-            e.preventDefault();
-            _this.stop(true);
-            _this.previous(_this.options.navigation.effect);
-        });
       
         //开始、暂停
         if (this.options.play.active) {
