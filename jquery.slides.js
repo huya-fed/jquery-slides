@@ -111,12 +111,12 @@
             prevButton.click(function(e) {
                 e.preventDefault();
                 _this.stop(true);
-                _this.next(_this.options.navigation.effect);
+                _this.previous(_this.options.navigation.effect);
             });
             nextButton.click(function(e) {
                 e.preventDefault();
                 _this.stop(true);
-                _this.previous(_this.options.navigation.effect);
+                _this.next(_this.options.navigation.effect);
             });
         }
 
